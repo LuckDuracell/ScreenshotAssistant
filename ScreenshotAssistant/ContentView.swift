@@ -165,7 +165,7 @@ struct ContentView: View {
                                             .resizable()
                                             .scaledToFit()
                                         //.aspectRatio(0.438, contentMode: .fit)
-                                            .scaleEffect(0.755)
+                                            .scaleEffect(0.76)
                                             .cornerRadius(5)
                                             .shadow(color: sc.shadowColor, radius: sc.shadowRadius, x: sc.shadowX, y: sc.shadowY)
                                         if sc.mockupType == "Clay" {
@@ -190,7 +190,9 @@ struct ContentView: View {
                                                 .shadow(color: .clear, radius: 0)
                                         }
                                         
-                                    } .padding(.horizontal)
+                                    }
+                                    .scaledToFit()
+                                    .padding(.horizontal)
                                     Spacer()
                                     Text(sc.bottomText)
                                         .foregroundColor(sc.textColor)
